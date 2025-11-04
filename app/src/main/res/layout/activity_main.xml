@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundTint">
+
+    <!-- Display -->
+    <TextView
+        android:id="@+id/txtDisplay"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:padding="16dp"
+        android:text="0"
+        android:textSize="36sp"
+        android:textColor="@color/textPrimary"
+        android:gravity="end|bottom"
+        android:background="@color/displayBg"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/grid"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.22"/>
+
+    <!-- Grid Buttons -->
+    <GridLayout
+        android:id="@+id/grid"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:columnCount="4"
+        android:rowCount="6"
+        android:padding="8dp"
+        android:useDefaultMargins="true"
+        app:layout_constraintTop_toBottomOf="@id/txtDisplay"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <!-- Memory row -->
+        <Button android:id="@+id/btnMC" android:text="@string/lbl_mc" android:onClick="onMemoryClick"
+            android:backgroundTint="@color/btnLight" android:textColor="@color/textPrimary"/>
+        <Button android:id="@+id/btnMR" android:text="@string/lbl_mr" android:onClick="onMemoryClick"
+            android:backgroundTint="@color/btnLight" android:textColor="@color/textPrimary"/>
+        <Button android:id="@+id/btnMPlus" android:text="@string/lbl_mplus" android:onClick="onMemoryClick"
+            android:backgroundTint="@color/btnLight" android:textColor="@color/textPrimary"/>
+        <Button android:id="@+id/btnMMinus" android:text="@string/lbl_mminus" android:onClick="onMemoryClick"
+            android:backgroundTint="@color/btnLight" android:textColor="@color/textPrimary"/>
+
+        <!-- Back, Clear, Sign, Sqrt -->
+        <Button android:id="@+id/btnBack" android:text="@string/lbl_back" android:onClick="onControlClick"
+            android:backgroundTint="@color/btnGray" android:textColor="@color/textPrimary"/>
+        <Button android:id="@+id/btnClear" android:text="@string/lbl_clear" android:onClick="onControlClick"
+            android:backgroundTint="@color/btnWarn" android:textColor="@color/textPrimary"/>
+        <Button android:id="@+id/btnSign" android:text="@string/lbl_sign" android:onClick="onControlClick"
+            android:backgroundTint="@color/btnGray" android:textColor="@color/textPrimary"/>
+        <Button android:id="@+id/btnSqrt" android:text="@string/lbl_sqrt" android:onClick="onOpClick"
+            android:backgroundTint="@color/btnAccent" android:textColor="@color/textPrimary"/>
+
+        <!-- 7 8 9 ÷ -->
+        <Button android:id="@+id/btn7" android:text="@string/lbl_7" android:onClick="onDigitClick"
+            android:backgroundTint="@color/btnLight" android:textColor="@color/textPrimary"/>
+        <Button android:id="@+id/btn8" android:text="@string/lbl_8" android:onClick="onDigitClick"
+            android:backgroundTint="@color/btnLight" android:textColor="@color/textPrimary"/>
+        <Button android:id="@+id/btn9" android:text="@string/lbl_9" android:onClick="onDigitClick"
+            android:backgroundTint="@color/btnLight" android:textColor="@color/textPrimary"/>
+        <Button android:id="@+id/btnDiv" android:text="@string/lbl_div" android:onClick="onOpClick"
+            android:backgroundTint="@color/btnAccent" android:textColor="@color/textPrimary"/>
+
+        <!-- 4 5 6 × -->
+        <Button android:id="@+id/btn4" android:text="@string/lbl_4" android:onClick="onDigitClick"
+            android:backgroundTint="@color/btnLight" android:textColor="@color/textPrimary"/>
+        <Button android:id="@+id/btn5" android:text="@string/lbl_5" android:onClick="onDigitClick"
+            android:backgroundTint="@color/btnLight" android:textColor="@color/textPrimary"/>
+        <Button android:id="@+id/btn6" android:text="@string/lbl_6" android:onClick="onDigitClick"
+            android:backgroundTint="@color/btnLight" android:textColor="@color/textPrimary"/>
+        <Button android:id="@+id/btnMul" android:text="@string/lbl_mul" android:onClick="onOpClick"
+            android:backgroundTint="@color/btnAccent" android:textColor="@color/textPrimary"/>
+
+        <!-- 1 2 3 − -->
+        <Button android:id="@+id/btn1" android:text="@string/lbl_1" android:onClick="onDigitClick"
+            android:backgroundTint="@color/btnLight" android:textColor="@color/textPrimary"/>
+        <Button android:id="@+id/btn2" android:text="@string/lbl_2" android:onClick="onDigitClick"
+            android:backgroundTint="@color/btnLight" android:textColor="@color/textPrimary"/>
+        <Button android:id="@+id/btn3" android:text="@string/lbl_3" android:onClick="onDigitClick"
+            android:backgroundTint="@color/btnLight" android:textColor="@color/textPrimary"/>
+        <Button android:id="@+id/btnSub" android:text="@string/lbl_sub" android:onClick="onOpClick"
+            android:backgroundTint="@color/btnAccent" android:textColor="@color/textPrimary"/>
+
+        <!-- 0 . = + -->
+        <Button android:id="@+id/btn0" android:text="@string/lbl_0" android:onClick="onDigitClick"
+            android:backgroundTint="@color/btnLight" android:textColor="@color/textPrimary"/>
+        <Button android:id="@+id/btnDot" android:text="@string/lbl_dot" android:onClick="onDigitClick"
+            android:backgroundTint="@color/btnLight" android:textColor="@color/textPrimary"/>
+        <Button android:id="@+id/btnEq" android:text="@string/lbl_eq" android:onClick="onEqClick"
+            android:backgroundTint="@color/btnAccent" android:textColor="@color/textPrimary"/>
+        <Button android:id="@+id/btnAdd" android:text="@string/lbl_add" android:onClick="onOpClick"
+            android:backgroundTint="@color/btnAccent" android:textColor="@color/textPrimary"/>
+    </GridLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

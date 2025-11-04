@@ -1,0 +1,11 @@
+<resources>
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="backgroundTint">#0F172A</color>
+    <color name="displayBg">#1E293B</color>
+    <color name="btnGray">#374151</color>
+    <color name="btnLight">#4B5563</color>
+    <color name="btnAccent">#2563EB</color>
+    <color name="btnWarn">#DC2626</color>
+    <color name="textPrimary">#F9FAFB</color>
+</resources>

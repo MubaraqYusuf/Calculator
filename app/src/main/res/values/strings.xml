@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">Calculator</string>
+
+    <!-- Digits -->
+    <string name="lbl_0">0</string>
+    <string name="lbl_1">1</string>
+    <string name="lbl_2">2</string>
+    <string name="lbl_3">3</string>
+    <string name="lbl_4">4</string>
+    <string name="lbl_5">5</string>
+    <string name="lbl_6">6</string>
+    <string name="lbl_7">7</string>
+    <string name="lbl_8">8</string>
+    <string name="lbl_9">9</string>
+    <string name="lbl_dot">.</string>
+
+    <!-- Operations -->
+    <string name="lbl_add">+</string>
+    <string name="lbl_sub">−</string>
+    <string name="lbl_mul">×</string>
+    <string name="lbl_div">÷</string>
+    <string name="lbl_sqrt">√</string>
+    <string name="lbl_eq">=</string>
+
+    <!-- Controls -->
+    <string name="lbl_back">Back</string>
+    <string name="lbl_clear">C</string>
+    <string name="lbl_sign">±</string>
+
+    <!-- Memory -->
+    <string name="lbl_mc">MC</string>
+    <string name="lbl_mr">MR</string>
+    <string name="lbl_mplus">M+</string>
+    <string name="lbl_mminus">M−</string>
+</resources>
