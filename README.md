@@ -66,7 +66,7 @@ com.example.calculator/
 
 1. Clone this repository:
    ```bash
-   git clone https://github.com/yourusername/AndroidCalculator.git
+   git clone https://github.com/MubaraqYusuf/AndroidCalculator.git
    ```
 2. Open the project in **Android Studio**.
 3. Sync Gradle and build the project.
