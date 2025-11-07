@@ -95,5 +95,3 @@ com.example.calculator/
 This project is licensed under the **MIT License** — feel free to use and modify it for educational purposes.
 
 ---
-
-> “Simple, elegant, and efficient — the way a calculator should be.”
